@@ -1,0 +1,319 @@
+@import "~/node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bourbon-neat/app/assets/stylesheets/neat";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');
+
+
+/* defining brand variables */
+:root {
+  --rose: #996a6a;
+  --rose-dust: #d6baba;
+  --powder: #f5f0f0;
+  --white: #ffffff; 
+  --black: #000000;
+}
+
+/* Typography */
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 34px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+p, label, ul, li, span {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+p.bold {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 18px;
+}
+
+.button-dark {
+	background-color: var(--rose);
+	color: white;
+	padding: 10px 15px;
+	border-radius: 12px;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-weight:  700;
+	font-size:  13px;
+	line-height: 18px;
+	text-transform: capitalize;
+}
+
+.button-light {
+	border: 1px solid var(--rose-dust);
+	color: black;
+	padding: 10px 15px;
+	border-radius: 12px;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-weight:  700;
+	font-size:  13px;
+	line-height: 18px;
+	text-transform: capitalize;
+}
+
+a.button-dark {
+	margin: auto;
+}
+
+.divider {
+	color: var(--rose-dust);
+	width: 1px;
+}
+
+/* Universal page resets */
+
+body {
+	width:100%;
+	margin: auto;
+}
+
+.content {
+	width: 70%;
+	margin:  auto;
+}
+
+.content h1 {
+	margin-bottom: 5px;
+}
+
+.content h2 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+header {
+	background-color: var(--rose);
+	color:  white;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 20px;
+}
+
+#site-header-logo-cond {
+	filter: invert(100%) sepia(4%) saturate(634%) hue-rotate(234deg) brightness(113%) contrast(100%);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: -3px;
+}
+
+#site-header {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+#site-header a {
+	text-decoration: none;
+	color:  white;
+}
+
+.header ul, footer ul, .skirt-nav ul {
+	list-style: none;
+}
+
+nav{
+	display: inline-block;
+	float: right;
+}
+
+nav a, .skirt-nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header ul li, footer ul li, .skirt-nav ul li {
+	display:  inline-block;
+	margin: auto 10px;
+}
+
+.skirt-nav {
+	background-color: var(--rose);
+	color:  white;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.museum-address {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+footer {
+	background-color:  var(--powder);
+	padding-bottom: 15px;
+}
+
+#footer-lockup {
+	padding: 15px 10px;
+	max-width: 25%;
+}
+
+#footer-address {
+	float: right;
+	padding: 15px;
+}
+
+.one-third {
+	width: 31%;
+	display: inline-block;
+}
+
+.two-thirds {
+	width: 64%;
+	display: inline-block;
+}
+
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
+
+.full-width-wrap {
+	width: 70%;
+	margin:  auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.callout-box-rose {
+	background-color: var(--powder);
+	padding: 5%;
+	text-align:  center;
+}
+
+.callout-box-rose a {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.callout-box-white {
+	border: 1px solid var(--rose-dust);
+	text-align: center;
+}
+
+.callout-box-white h3 {
+	color: var(--rose);
+}
+
+.life-dates {
+	color: var(--rose);
+}
+
+.hero {
+	background-image: url('/space-of-their-own/img/hero.jpg');
+	background-position: center;
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+	height: 500px;
+	padding-bottom: 20px;
+}
+
+.hero-text-wrap {
+	width: 100%;
+	left: 50%;
+	right: 50%;
+}
+
+.hero-text-wrap p {
+	text-align: center;
+	color: white;
+	font-size: 4vw;
+	margin: 0;
+	padding: 175px;
+	line-height: initial;
+}
+
+.profile-image {
+	border-radius: 50%;
+}
+
+img.one-third {
+	padding: 2% 1%;
+}
+
+
+.powder-bg {
+	background-color: var(--powder);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: var(--rose);
+  color: var(--white);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: var(--rose-dust);
+  color: var(--black);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: var(--powder);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
